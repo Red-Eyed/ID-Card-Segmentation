@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 from sklearn.model_selection import train_test_split
-from keras.callbacks import TensorBoard, ModelCheckpoint
+from tensorflow.keras.callbacks import TensorBoard, ModelCheckpoint
 from .unet_model import get_model
 
 X = np.load('final_train.npy')

@@ -1,12 +1,12 @@
-from keras.models import Model, load_model
-from keras.layers import Conv2D, MaxPool2D, Input, concatenate, UpSampling2D, Dropout
-from keras.layers import Conv2DTranspose, AvgPool2D, GaussianNoise, BatchNormalization
+from tensorflow.keras.models import Model, load_model
+from tensorflow.keras.layers import Conv2D, MaxPool2D, Input, concatenate, UpSampling2D, Dropout
+from tensorflow.keras.layers import Conv2DTranspose, AvgPool2D, GaussianNoise, BatchNormalization
 import tensorflow as tf
 import keras.backend as K
-from keras.optimizers import Adam
-from keras.losses import binary_crossentropy
+from tensorflow.keras.optimizers import Adam
+from tensorflow.keras.losses import binary_crossentropy
 import keras
-from keras.callbacks import TensorBoard, ModelCheckpoint
+from tensorflow.keras.callbacks import TensorBoard, ModelCheckpoint
 from .iou_loss import IoU
 
 def get_model():
